@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.search-box:has(input:focus) {
+    border: 2px solid rgb(93, 58, 169);
+}
+
+/* Hide scrollbars for all browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari, Opera */
+}
+
+@media (width <= 450px) {
+    .bar{
+        left: 17%;
+    }
+}
